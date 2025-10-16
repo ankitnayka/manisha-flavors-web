@@ -3,8 +3,8 @@ import { MapPin, Phone, Clock, Facebook, Instagram } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border mt-20">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-0 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 px-8 gap-8">
           {/* About */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-foreground">MANISHA CHOLE BHATURE</h3>
@@ -73,9 +73,9 @@ const Footer = () => {
         </div>
         
         {/* Bottom Bar */}
-        <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
+        <div className="w-full bg-gradient-warm text-white border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Manisha Chole Bhature. All rights reserved.</p>
-          <p className="mt-1">Price per person: ₹200–400</p>
+          <p className="mt-1">Authentic Gujarati & North Indian Cuisine</p>
         </div>
       </div>
     </footer>

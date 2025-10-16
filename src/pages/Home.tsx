@@ -54,7 +54,7 @@ const Home = () => {
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Star className="w-5 h-5 text-primary" />
-                  <span>₹200-400 per person</span>
+                  {/* <span>₹200-400 per person</span> */}
                 </div>
               </div>
             </div>
@@ -214,7 +214,7 @@ const Home = () => {
             <Button asChild size="xl" className="bg-white text-primary hover:bg-white/90">
               <a href="tel:+919998650919">Call: +91 99986 50919</a>
             </Button>
-            <Button asChild variant="outline" size="xl" className="border-white text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="xl" className="border-white text-primary hover:bg-white/10">
               <Link to="/contact">Get Directions</Link>
             </Button>
           </div>
