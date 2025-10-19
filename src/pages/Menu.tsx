@@ -78,8 +78,8 @@ const menuData: MenuSection[] = [
     title: "Beverages",
     icon: "🥤",
     items: [
-      { name: "Masala Buttermilk", price: "₹20.00", image: "/menuItems/buttermilk.png" },
-      { name: "Buttermilk", price: "₹15.00", image: "/menuItems/buttermilk1.png" },
+      { name: "Masala Buttermilk", price: "₹20.00", image: "/menuItems/butterMilk.png" },
+      { name: "Buttermilk", price: "₹15.00", image: "/menuItems/butterMilk1.png" },
       { name: "Mineral Water", price: "As per MRP", image: "/menuItems/waterbottle.png" },
       { name: "Cold Drinks", price: "As per MRP", image: "/menuItems/colddrink.png" },
     ],
