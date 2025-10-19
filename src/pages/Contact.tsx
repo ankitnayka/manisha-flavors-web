@@ -34,7 +34,8 @@ const Contact = () => {
   };
 
   const address = "Gandhi Food Garden Farm, Opp Agriculture University Navsari Eru, Gam Road, Jalalpore, Navsari, Gujarat 396450";
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+  // const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+  const googleMapsUrl = `https://maps.app.goo.gl/uBjQJbHuWNxoRfKm6`;
 
   return (
     <div className="min-h-screen bg-background">
@@ -118,7 +119,7 @@ const Contact = () => {
                     <div className="flex-1">
                       <h3 className="font-semibold text-lg mb-2">Address</h3>
                       <p className="text-muted-foreground mb-3">{address}</p>
-                      <Button asChild variant="outline" size="sm">
+                      <Button asChild variant="outline" size="sm">  
                         <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
                           <Navigation className="w-4 h-4 mr-2" />
                           Get Directions
@@ -193,7 +194,7 @@ const Contact = () => {
                       <Facebook className="w-6 h-6" />
                     </a>
                     <a
-                      href="https://www.instagram.com"
+                      href="https://www.instagram.com/zayka_dilli_ka_/?igsh=czJudmR5ajkzM2Iy#"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center w-12 h-12 bg-gradient-warm text-white rounded-lg hover:shadow-warm transition-all hover:scale-110"

@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative pt-24 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-hero -z-10" />
@@ -25,7 +25,8 @@ const Home = () => {
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 MANISHA<br />
-                <span className="text-primary">CHOLE BHATURE</span>
+                {/* <span className="text-primary">CHOLE BHATURE</span> */}
+                <span className="block text-primary mt-2">छोले भटूरे</span>
               </h1>
               <p className="text-xl text-muted-foreground">
                 Taste the Tradition, Served Fresh Every Day
@@ -34,14 +35,24 @@ const Home = () => {
                 From Our Kitchen to Your Heart ❤️
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button asChild variant="hero" size="xl">
+                {/* <Button asChild variant="hero" size="xl">
                   <a href="tel:+919998650919">Order Now</a>
+                </Button> */}
+                <Button asChild variant="hero" size="xl">
+                  <a
+                    href="https://wa.me/919998650919"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Order Now
+                  </a>
                 </Button>
+
                 <Button asChild variant="outline" size="xl">
                   <Link to="/menu">View Menu</Link>
                 </Button>
               </div>
-              
+
               {/* Quick Info */}
               <div className="flex flex-wrap gap-6 pt-6 text-sm">
                 <div className="flex items-center gap-2 text-muted-foreground">
@@ -53,24 +64,56 @@ const Home = () => {
                   <span>Jalalpore, Navsari</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <Star className="w-5 h-5 text-primary" />
-                  {/* <span>₹200-400 per person</span> */}
+                  {/* Stars */}
+                  <div className="flex items-center">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+
+                  {/* Rating Text */}
+                  <span className="text-sm font-medium text-foreground">
+                    5.0 <span className="text-muted-foreground">(Google Reviews)</span>
+                  </span>
                 </div>
+                {/* <div className="flex items-center gap-2 text-muted-foreground">
+                  <Star className="w-5 h-5 text-primary" />
+                  
+                </div> */}
               </div>
             </div>
-            
-            <div className="relative animate-scale-in">
+            <div className="relative animate-scale-in flex flex-col items-center">
+              {/* Gradient Glow Effect */}
               <div className="absolute -inset-4 bg-gradient-warm opacity-20 blur-3xl rounded-full animate-float" />
+
+              {/* Image */}
+              <img
+                src={heroImage}
+                alt="Delicious Chole Bhature"
+                className="relative rounded-2xl shadow-warm w-full h-auto"
+              />
+
+              {/* Tagline Below Image */}
+              <span className="mt-4 text-center font-semibold text-lg text-foreground">
+                “Navsari’s No.1 Chole Bhature – Taste That Touches the Heart ❤️”
+              </span>
+            </div>
+
+
+            {/* <div className="relative animate-scale-in">
+              <div className="absolute -inset-4  bg-gradient-warm opacity-20 blur-3xl rounded-full animate-float" />
+
               <img 
                 src={heroImage} 
                 alt="Delicious Chole Bhature" 
                 className="relative rounded-2xl shadow-warm w-full h-auto"
               />
-            </div>
+                <span className="font-bold">“Navsari’s No.1 Chole Bhature – Taste That Touches the Heart ”</span>
+            </div> */}
           </div>
         </div>
       </section>
-      
+
       {/* Features */}
       <section className="py-16 bg-card">
         <div className="container mx-auto px-4">
@@ -86,7 +129,7 @@ const Home = () => {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card className="border-0 shadow-soft hover:shadow-warm transition-all">
               <CardContent className="pt-6 text-center">
                 <div className="bg-gradient-warm w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -98,7 +141,7 @@ const Home = () => {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card className="border-0 shadow-soft hover:shadow-warm transition-all">
               <CardContent className="pt-6 text-center">
                 <div className="bg-gradient-warm w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -106,14 +149,15 @@ const Home = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Quick Service</h3>
                 <p className="text-muted-foreground">
-                  Fast preparation without compromising quality
+                  🚚 Free Delivery within 2km!
                 </p>
               </CardContent>
             </Card>
+
           </div>
         </div>
       </section>
-      
+
       {/* Featured Dishes */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -123,13 +167,13 @@ const Home = () => {
               Handpicked favorites that keep our customers coming back
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="overflow-hidden border-0 shadow-soft hover:shadow-warm transition-all group">
               <div className="relative overflow-hidden">
-                <img 
-                  src={thaliImage} 
-                  alt="Gujarati Thali" 
+                <img
+                  src={thaliImage}
+                  alt="Gujarati Thali"
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">
@@ -147,12 +191,12 @@ const Home = () => {
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="overflow-hidden border-0 shadow-soft hover:shadow-warm transition-all group">
               <div className="relative overflow-hidden">
-                <img 
-                  src={butterCholeImage} 
-                  alt="Butter Chole Bhature" 
+                <img
+                  src={butterCholeImage}
+                  alt="Butter Chole Bhature"
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">
@@ -170,12 +214,12 @@ const Home = () => {
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="overflow-hidden border-0 shadow-soft hover:shadow-warm transition-all group">
               <div className="relative overflow-hidden">
-                <img 
-                  src={masalaPapadImage} 
-                  alt="Masala Papad" 
+                <img
+                  src={masalaPapadImage}
+                  alt="Masala Papad"
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">
@@ -194,7 +238,7 @@ const Home = () => {
               </CardContent>
             </Card>
           </div>
-          
+
           <div className="text-center mt-12">
             <Button asChild variant="outline" size="lg">
               <Link to="/menu">View Full Menu</Link>
@@ -202,7 +246,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-warm text-white">
         <div className="container mx-auto px-4 text-center">
@@ -220,7 +264,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
       <Footer />
     </div>
   );

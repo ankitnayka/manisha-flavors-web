@@ -21,7 +21,7 @@ const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="https://www.instagram.com" 
+                href="https://www.instagram.com/zayka_dilli_ka_/?igsh=czJudmR5ajkzM2Iy#" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-secondary hover:bg-primary hover:text-white p-2 rounded-lg transition-colors"
@@ -59,7 +59,7 @@ const Footer = () => {
                 <Clock className="w-5 h-5 mt-1 text-primary flex-shrink-0" />
                 <div className="text-sm">
                   <p className="font-medium text-foreground mb-1">Daily</p>
-                  <p>9:15 AM - 10:00 PM</p>
+                  <p>9:00 AM - 11:00 PM</p>
                 </div>
               </div>
               <div className="bg-secondary/50 p-3 rounded-lg text-sm">
