@@ -150,7 +150,7 @@ const Contact = () => {
                     <div className="flex-1">
                       <h3 className="font-semibold text-lg mb-2">Hours</h3>
                       <p className="text-muted-foreground">
-                        <span className="font-medium text-foreground">Daily:</span> 9:15 AM - 10:00 PM
+                        <span className="font-medium text-foreground">Daily:</span> 9:00 AM - 10:00 PM
                       </p>
                     </div>
                   </div>
@@ -163,7 +163,7 @@ const Contact = () => {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-center gap-2">
                       <span className="w-2 h-2 bg-primary rounded-full" />
-                      Cash only - No cards accepted
+                          Online Payment Accepted 
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-2 h-2 bg-primary rounded-full" />
@@ -171,11 +171,11 @@ const Contact = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-2 h-2 bg-primary rounded-full" />
-                      Good for watching sport
+                      Good for watching sport/
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-2 h-2 bg-primary rounded-full" />
-                      Price per person: ₹200-400
+                        Famaily Seating 
                     </li>
                   </ul>
                 </CardContent>

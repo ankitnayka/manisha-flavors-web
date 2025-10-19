@@ -23,8 +23,8 @@ const menuData: MenuSection[] = [
     title: "Chole Bhature Specials",
     icon: "⭐",
     items: [
-      { name: "Chhole Bhature", price: "₹60.00", image: "/menuItems/cholebhature.png" },
       { name: "Butter Chhole Bhature", price: "₹80.00", isPopular: true, image: "/menuItems/butterChole.png" },
+      { name: "Chhole Bhature", price: "₹60.00", image: "/menuItems/cholebhature.png" },
       { name: "Cheese Chhole Bhature", price: "₹80.00", image: "/menuItems/cheeschole.png" },
       { name: "Butter Cheese Chhole Bhature", price: "₹100.00", image: "/menuItems/butterchesschole.png" },
     ],
@@ -48,9 +48,9 @@ const menuData: MenuSection[] = [
     title: "Starters",
     icon: "🥘",
     items: [
+      { name: "Masala Papad", price: "₹25.00", isPopular: true, image: "/menuItems/masalapapad.png" },
       { name: "Roasted Papad", price: "₹12.00", image: "/menuItems/rostedpapad.png" },
       { name: "Fried Papad", price: "₹15.00", image: "/menuItems/friedpapad.png" },
-      { name: "Masala Papad", price: "₹25.00", isPopular: true, image: "/menuItems/masalapapad.png" },
       { name: "Cheese Masala Papad", price: "₹40.00" },
     ],
   },

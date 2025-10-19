@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,8 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+           {/* Scroll to top button */}
+        <ScrollToTopButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
